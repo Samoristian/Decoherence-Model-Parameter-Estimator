@@ -11,7 +11,6 @@ matplotlib.use("QtAgg")
 from matplotlib.backends.backend_qtagg import FigureCanvasQTAgg, NavigationToolbar2QT
 from matplotlib.figure import Figure
 
-
 REAL_DTYPE = torch.float64
 COMPLEX_DTYPE = torch.complex128
 DEVICE = torch.device("cpu")
