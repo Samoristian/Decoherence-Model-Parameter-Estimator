@@ -1,4 +1,4 @@
-# Two-Spin Bosonic Dephasing Model Simulator
+# Decoherence Model Parameter Estimator
 
 An interactive application for simulating entanglement dynamics, decoherence/recoherence processes, and initial system-environment correlations in a two-spin bosonic dephasing model with PyTorch and PySide6.
 
@@ -20,7 +20,7 @@ The simulator models two qubits coupled to a common bosonic thermal bath via pur
   - Pure-PyTorch Gauss–Legendre quadrature for the bath decoherence function $\gamma(t)$, dynamic phase $\Phi(t)$, indirect spin-spin coupling $\Delta(t) = \Phi(t) - Kt$, and correlational contributions $\gamma_{nm}^{\text{cor}}(t)$ and $\chi_{nm}(t)$.
 - **Interactive PySide6 GUI**:
   - Real-time sliders and spinboxes for inverse temperature $\beta = 1/(k_B T)$, qubit transition frequency $\omega_0$, coupling strength $\lambda$, Ohmicity index $s$ (sub-Ohmic $s < 1$, Ohmic $s = 1$, super-Ohmic $s > 1$), cut-off frequency $\omega_c$, and maximum evolution time $t_{\max}$.
-  - Live multi-panel plots tracking **Wootters Concurrence** $C(t)$, **Peres–Horodecki Negativity** $\mathcal{N}(t)$, **System Purity** $\mathcal{P}(t) = \Tr[\rho_S^2(t)]$, **Von Neumann Entropy** $S_{\text{vN}}(t)$, decoherence functions, and phase shifts.
+  - Live multi-panel plots tracking **Wootters Concurrence** $C(t)$, **Peres–Horodecki Negativity** $\mathcal{N}(t)$, **System Purity** $\mathcal{P}(t) = Tr[\rho_S^2(t)]$, **Von Neumann Entropy** $S_{\text{vN}}(t)$, decoherence functions, and phase shifts.
   - Built-in tensor inspector displaying $|a_{r1}|^2$, $b_{rk}$, $G$, and $\rho_S(0)$ alongside characteristic relaxation times.
 
 ## Installation
@@ -47,7 +47,7 @@ The simulator models two qubits coupled to a common bosonic thermal bath via pur
 Launch the interactive simulator:
 
 ```bash
-python two_spin_dephasing_gui.py
+python dephasing_gui.py
 ```
 
 ### Controls Overview
@@ -65,4 +65,4 @@ python two_spin_dephasing_gui.py
 
 ## License
 
-This project is distributed under the MIT License (or CC BY 4.0 in alignment with the referenced article).
+This project is distributed under the MIT License.
